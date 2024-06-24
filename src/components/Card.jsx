@@ -19,7 +19,7 @@ const BookCard = (props) => {
 
   return (
     <Card
-     style={{ width: "18rem", margin: "25px" }}
+     style={{ width: "18rem", margin: "25px", }}
     >
       <Card.Img variant="top" src={url} />
       <Card.Body>

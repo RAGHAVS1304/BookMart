@@ -23,12 +23,12 @@ import {
 
 const FirebaseContext=createContext(null);
 const firebaseConfig = {
-    apiKey: "AIzaSyCFXkBU_0DUAIMkHY_1fi84924wgg6oq-0",
-    authDomain: "bookify-d4f5e.firebaseapp.com",
-    projectId: "bookify-d4f5e",
-    storageBucket: "bookify-d4f5e.appspot.com",
-    messagingSenderId: "185123759460",
-    appId: "1:185123759460:web:a286e86bd3f52112164671"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FIREBASE_APP_ID,
   };
   export const useFirebase=()=>useContext(FirebaseContext);
   const firebaseApp=initializeApp(firebaseConfig);
